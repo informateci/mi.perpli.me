@@ -1,0 +1,10 @@
+bin/*
+lib/*
+include/*
+content/*
+!content/images/.keep
+.Python
+*.pyc
+*.pid
+output/*
+*.db

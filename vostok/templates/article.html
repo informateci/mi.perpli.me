@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="post">
+  <header>
+    <h2 class="entry-title">
+      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+         title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+ {% import 'translations.html' as translations with context %}
+ {{ translations.translations_for(article) }}
+  </header>
+    <abbr class="date" title="{{ article.date.isoformat() }}">
+      {{ article.locale_date }}
+    </abbr>
+  <div class="entry">
+    {{ article.content }}
+  </div><!-- /.entry-content -->
+</article>
+{% endblock %}

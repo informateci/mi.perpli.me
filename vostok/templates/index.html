@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="main-content">
+
+{% for article in articles_page.object_list %}
+        <article class="post">
+                <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+                <abbr class="date" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
+                <div class="entry"> {{ article.content }} </div><!-- /.entry-content -->
+        </article>
+{% endfor %}
+{% include 'pagination.html' %}
+</section><!-- /#content -->
+{% endblock content %}

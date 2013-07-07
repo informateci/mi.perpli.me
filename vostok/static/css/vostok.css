@@ -1,0 +1,144 @@
+body{font-size:62.5%}
+a:link,a:visited{text-decoration:none;}
+ul,ol{list-style:none;}
+h1,h2,h3,h4,h5,h6,pre,code{font-size:1em;}
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0;padding:0;}
+a img,:link img,:visited img{border:none;}
+address{font-style:normal;}
+ #wrapper {margin: 0 auto; max-width: 46.15em; min-width: 700px}
+#header {margin: 0 0 -1em 0; padding: 5em 0 0 0; position: relative}
+#header .description {margin: .5em 0 0 0}
+.string {margin: 4.6em 0 0 0}
+.error {margin: 2.6em 0; line-height: 1.2em}
+.post {margin: 4.6em 0; padding: 2.7em; position: relative}
+.post img, .post object, .post embed {display: block; margin: 2em auto}
+.post img {max-width:600px; height:auto;}
+.post .vvqbox {margin: 2em auto}
+.post .date {position: absolute; right: 1em; top: 1em}
+.post h2 {margin: 0 0 1em 0}
+.post h3, .post h4, .post h5 {margin: 2em 0 1em 0}
+.post .number-of-comments {bottom: 1em; position: absolute; right: 1em}
+.post blockquote {margin: 2em; padding: .1em 1.5em; position: relative}
+.post blockquote cite {display: block; text-align: right}
+.entry ul {list-style: none inside; padding: 0 1em}
+.entry ol {list-style: decimal outside; padding: 0 2.5em}
+.entry ul li {background: url(http://static.tumblr.com/0vccnsa/Rl5l94885/bullet.gif) 0 7px no-repeat; margin: 1em 0; padding: 0 0 0 15px}
+.entry ol li {margin: 1em 0}
+.comment {padding: 1.8em 1.6em; position: relative; overflow: hidden}
+.comment .date {bottom: 1em; position: absolute; right: 1em}
+#commentform {margin: 2.3em 0 4.6em 0; padding: 2.7em}
+.pagination {margin: -2.6em 0 4.6em 0}
+.pagination div {margin: 0 2em 0 0}
+#sidebar {padding: 0 0 7em 0}
+#sb-1, #sb-2 {float: left; width: 50%}
+#sidebar .email {background: url(http://static.tumblr.com/0vccnsa/bxcl9489l/ico-mail.gif) 0 4px no-repeat; padding: 0 0 0 1.8em}
+#sidebar #rss li {background: url(http://static.tumblr.com/0vccnsa/fFYl948bm/ico-rss.jpg) left center no-repeat; padding: 0 0 0 1.8em; margin: .5em 0}
+#footer {padding: 1em 0}
+ #wrapper {font-family: "Lucida Grande", Helvetica, Arial, sans-serif; font-size: 15px; line-height: 145%}
+p {margin: 1em 0}
+h1 {font-size: 25px; font-weight: normal}
+#header .description {font-size: 13px}
+#header a {text-decoration: none}
+a.back {text-decoration: underline}
+#search h2, .post h2, #comments h3, #commentform h3, .emptysearch, .error {font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal}
+.post h2 a {text-decoration: none}
+.post h2 {font-size: 22px; line-height: 18px}
+.post h3 {font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 120%}
+.post h4 {font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 120%}
+.post h5 {font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 120%}
+.post blockquote cite {font-style: normal}
+.date {font-size: 13px}
+.post .number-of-comments a {text-decoration: underline; font-size: 13px}
+#comments {font-size: 13px}
+.date {font-size: 12px}
+#comments h3 {margin: 0 0 2em 0; font-size: 18px}
+#commentform h3 {margin: 0 0 1.5em 0}
+#commentform p {font-size: 13px}
+.comment cite {font-style: normal}
+.comment cite a {text-decoration: underline}
+.pagination a {text-decoration: underline}
+#sidebar {font-size: 13px}
+#sidebar a {text-decoration: none}
+#footer {font-size: 13px}
+#footer a {text-decoration: underline}
+#footer p {margin: 0}
+ html, body {background: #2F2F2F}
+strong {color: #CCC}
+#wrapper {background: #2F2F2F; color: #999}
+#header a:link, #header a:visited {color: #09C}
+#header a:hover, #header a:active, #header a:focus {color: #FFF}
+.back:link, .back:visited {color: #F90}
+.back:hover, .back:active, .back:focus {color: #FFF}
+.post {
+    background: #3C3C3C;
+    border: 1px solid #3C3C3C;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    }
+.post h2, .post h3, .post h4, .post h5, #search h2, .emptysearch, .error {color: #CCC}
+.post h2 a:link, .post h2 a:visited {color: #CCC}
+.post h2 a:hover, .post h2 a:active, .post h2 a:focus {color: #F90}
+.post blockquote {background: #2F2F2F}
+.date {color: #828282}
+.entry a:link, .comment a:link {color: #F90}
+.entry a:visited, .comment a:visited {color: #F90}
+.entry a:hover, .entry a:active, .entry a:focus, .comment a:hover, .comment a:active, .comment a:focus {color: #FFF}
+.post img {border: 5px solid #FFF}
+.post .number-of-comments a:link, .post .number-of-comments a:visited {color: #CCC}
+.post .number-of-comments a:hover, .post .number-of-comments a:active, .post .number-of-comments a:focus {color: #F90}
+#comments h3, #commentform h3 {color: #CCC}
+.comment {border-top: 1px solid #3C3C3C}
+.highlighted {background: #3C3C3C; border-top: 1px solid #2F2F2F}
+.highlighted a:link, .highlighted a:visited {color: #09C}
+.comment cite {color: #CCC}
+.comment .moderation {color: #FFF}
+#commentform {background: #3C3C3C}
+#commentform a:link, #commentform a:visited {color: #09C}
+#commentform a:hover, #commentform a:active, #commentform a:focus {color: #CCC}
+.pagination {color: #F90}
+.pagination a:link, .pagination a:visited {color: #F90}
+.pagination a:hover, .pagination a:active, .pagination a:focus {color: #FFF}
+#sidebar {color: #828282}
+#sidebar a:link, #sidebar a:visited {color: #C4C4C4}
+#sidebar a:hover, #sidebar a:active, #sidebar a:focus {color: #F90}
+#sidebar #sb-2 a:link, #sidebar #sb-2 a:visited {color: #C4C4C4}
+#sidebar #sb-2 a:hover, #sidebar #sb-2 a:active, #sidebar #sb-2 a:focus {color: #F90}
+#footer {border-top: 1px solid #3C3C3C; color: #828282}
+#footer a:link, #footer a:visited {color: #09C}
+#footer a:hover, #footer a:active, #footer a:focus {color: #FFF}
+ .input-text, textarea {border: none; font-size: 1em; padding: .3em}
+label {font-size: 1em; margin: 0 .5em}
+#search-form label {position: absolute; top: -99999px}
+.input-submit {text-align: right}
+#commentform input {width: 43%}
+#commentform textarea {font-size: 1em; font-family: Helvetica, Arial, sans-serif; width: 612px}
+#submit-comment {width: auto; font-size: 17px; height: 30px}
+#submit {padding: 1px 13px; margin: 0 0 0 5px}
+  .clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.clearfix {display: inline-block;}
+ * html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+.next{
+right: 0px;
+float: right;
+}
+.prev{
+left: 0px;
+float: left;
+}
+#header .description{
+font-family: 'Gloria Hallelujah', cursive;
+
+}
+
+
+.entry img{
+width: auto !important; /*override the width below*/
+width: 100%;
+max-width: 100%;
+}
