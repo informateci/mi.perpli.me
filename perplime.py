@@ -96,11 +96,10 @@ def write_entry(title, date, description, entryfile, imageurl):
     what = '''Title: {}
 Date: {}
 
-![{}](|filename|/images/{})'''.format(title,
-                                      date.strftime("%Y-%m-%d %H:%M:%S"),
-                                      imageurl,
-                                      title,
-                                      description)
+![{}]({})'''.format(title,
+                    date.strftime("%Y-%m-%d %H:%M:%S"),
+                    len(description) and description or title,
+                    imageurl)
 
     write_to_file_in_dir(what, entryfile)
 
