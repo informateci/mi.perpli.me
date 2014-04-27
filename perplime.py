@@ -4,10 +4,13 @@ import os
 import errno
 from time import time
 from datetime import datetime
-from PIL import Image
 import dbm
 import sys
 
+try:
+    from PIL import Image
+except:
+    print "No PIL no hashing!!"
 
 def download_file(url, path):
     import urllib2
@@ -116,8 +119,12 @@ if __name__ == '__main__':
 
     download_file(config.url, image_file)
 
-    image_hash = hash_calc(image_file)
-    check = hash_check(image_hash, hash_list)
+    if 'Image' in dir():
+        image_hash = hash_calc(image_file)
+        check = hash_check(image_hash, hash_list)
+    else:
+        image_hash = None
+        check = False
 
     if not check or config.force:
         write_entry(config.title.upper(),
@@ -125,8 +132,12 @@ if __name__ == '__main__':
                     config.description,
                     entry_file,
                     image_url)
-        hash_write(image_hash, hash_list, config.url)
+
+        if image_hash:
+            hash_write(image_hash, hash_list, config.url)
+
         sys.exit(0)
+
     else:
         sys.stderr.write("COLLISION: %s\n" % check)
         sys.exit(1)
