@@ -46,7 +46,7 @@ while [ $mainret = 0 ]; do
                 oldtitle="$(egrep '^Title: ' $item | sed -e 's/^[^:]*: //')"
                 $DIALOG --inputbox "Rename the Article $item"  25 80 "$oldtitle" 2> $TMP/result
                 if [ $? = 0 ]; then
-                    newtitle=`cat $TMP/result`
+                    newtitle=`cat $TMP/result | tr '[:lower:]' '[:upper:]'`
                     sed -i -e "s/^Title: .*/Title: $newtitle/" $item
                     edit=1
                 fi
