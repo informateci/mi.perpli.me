@@ -36,3 +36,5 @@ THEME = "./vostok"
 
 PLUGIN_PATH = "./plugins"
 PLUGINS = ["slugcollision"]
+
+FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),)
