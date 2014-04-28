@@ -2,11 +2,12 @@
     <div class="pagination clearfix">
     {% if articles_page.has_previous() %}
         {% set num = articles_page.previous_page_number() %}
-        <div class="prev"><a href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else ''}}.html">Prev &#8592;</a></div>
+        <div class="prev"><a href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else ''}}.html">&#8592; Prev</a></div>
     {% endif %}
     {% if articles_page.has_next() %}
         <div class="next"><a href="{{ SITEURL }}/{{ page_name }}{{articles_page.next_page_number() }}.html">Next &#8594;</a></div>
     {% endif %}
-    <p>{{ articles_page.number }} / {{ articles_paginator.num_pages }}</p>
+    
+    <p style="clear: both">{{ articles_page.number }} / {{ articles_paginator.num_pages }}</p>
     </div>
 {% endif %}
