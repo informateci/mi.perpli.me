@@ -8,14 +8,14 @@
 <article class="post">
   <header>
     <h2 class="entry-title">
-      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-         title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+      <a href="http://mi.perpli.me/{{ article.url }}" rel="bookmark"
+         title="{{ article.title|striptags }}">{{ article.title }}</a></h2>
   </header>
     <abbr class="date" title="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
     </abbr>
   <div class="entry">
     {{ article.content }}
-  </div><!-- /.entry-content -->
+  </div>
 </article>
 {% endblock %}
