@@ -20,7 +20,7 @@
         <header id="header" class="body">
                 <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
                 <p class="description">{{ SITESUBTITLE }}</p>
-        </header><!-- /#banner -->
+        </header>
         <nav id="menu"><ul>
         {% for title, link in MENUITEMS %}
             <li><a href="{{ link }}">{{ title }}</a></li>
@@ -36,7 +36,7 @@
             {% endfor %}
           {% endif %}
         {% endif %}
-        </ul></nav><!-- /#menu -->
+        </ul></nav>
         <div class="content">
             {% block content %}
             {% endblock %}
@@ -44,8 +44,8 @@
                     <address id="about" class="vcard body">
                     {{ SITENAME }} is powered by <a href="http://github.com/informateci/mi.perpli.me">mi.perpli.me</a>,
                     and <a href="http://www.vostoktheme.com">Vostok Theme</a>.
-                    </address><!-- /#about -->
-            </footer><!-- /#contentinfo -->
+                    </address>
+            </footer>
         </div>
     </div>
 </body>
