@@ -1,12 +1,15 @@
 {% extends "base.html" %}
+{% block head %}
+<meta property="og:title" content="{{ article.title }}">
+<meta property="og:url" content="http://mi.perpli.me/{{ article.url }}">
+<meta property="og:image" content="{{ article.source_path | replace('/home/fischio/mi.perpli.me/content/', 'http://mi.perpli.me/images/') | replace('.md', '') }}">
+{% endblock %}
 {% block content %}
 <article class="post">
   <header>
     <h2 class="entry-title">
       <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
          title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
- {% import 'translations.html' as translations with context %}
- {{ translations.translations_for(article) }}
   </header>
     <abbr class="date" title="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
