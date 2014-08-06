@@ -38,8 +38,9 @@ THEME = "./vostok"
 PLUGIN_PATH = "./plugins"
 PLUGINS = ["slugcollision"]
 
-STATIC_PATHS = ['extra/robots.txt', 'extra/favicon.ico', 'images']
+STATIC_PATHS = ['extra/robots.txt', 'extra/favicon.ico', 'extra/rss.png', 'images']
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/rss.png': {'path': 'rss.png'},
 }
