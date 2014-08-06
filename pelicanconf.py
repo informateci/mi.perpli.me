@@ -12,7 +12,8 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'it'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_DOMAIN = SITEURL
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
@@ -37,7 +38,8 @@ THEME = "./vostok"
 PLUGIN_PATH = "./plugins"
 PLUGINS = ["slugcollision"]
 
-STATIC_PATHS = ['extra/robots.txt', 'images']
+STATIC_PATHS = ['extra/robots.txt', 'extra/favicon.ico', 'images']
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
 }
