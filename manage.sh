@@ -18,7 +18,7 @@ echo "Collecting data on Articles..."
 
 sorted=$(
     for i in $(find content -iname '*md' ); do 
-        echo  "$i \"$(egrep "^Date" $i | sed -e 's/^[^:]*: //') $(egrep "^Title" $i | sed -e 's/^[^:]*: //')\" "; 
+        echo  "$i \"$(egrep "^Date" $i | sed -e 's/^[^:]*: //') $(egrep "^Title" $i | sed -e 's/^[^:]*: //; s/\([^a-zA-Z0-9 -_]\)/\\\1/')\" "; 
     done  | sort -r -k 2
     )
 
